@@ -7,8 +7,7 @@
   "description": "Allows to override templates for 3rd party libs",
   "main": "src/index.js",
   "license": "MIT",
-  "homepage": "",
-  "private": true,
+  "homepage": "https://github.com/alQlagin/templateProvider",
   "ignore": [
     "**/.*",
     "node_modules",

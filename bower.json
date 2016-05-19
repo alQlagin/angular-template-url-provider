@@ -1,0 +1,19 @@
+{
+  "name": "template-url-provider",
+  "version": "1.0.0",
+  "authors": [
+    "Alex Kulagin <al.qlagin@gmail.com>"
+  ],
+  "description": "Allows to override templates for 3rd party libs",
+  "main": "src/index.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

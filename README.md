@@ -5,7 +5,7 @@ Allows to override templates loaded via ui-router state.templateUrl
 install via bower
 
 ```bash
-bower install templateUrlProvider
+bower install angular-template-url-provider
 ```
 
 Add 'ui.router.templateProvider' to your app dependencies
@@ -24,7 +24,10 @@ In config phase add TemplateUrlProvider and assign replaces
     /**
     * first is url to override, second is your template url
     */
-    TemplateUrlProvider.replace('vendor/my-module/views/template.html', 'my-theme/views/my.module.template.html')
+    angular.module('app', ['templateUrlProvider'])
+    .config(['TemplateUrlProvider', function(TemplateUrlProvider){
+        TemplateUrlProvider.replace('vendor/my-module/views/template.html', 'my-theme/views/my.module.template.html')
+    }])
 ```
 
 This can be useful when need to overload 3rd party templates:
